@@ -6,9 +6,16 @@ function changeSubtitle() {
     "Et bien plus ...",
     "Ou sinon, contactez moi.",
     "Les infos sont ici.",
+    "Membre de Daelium !",
+    "Pourquoi pas ?",
+    "Avaible in English",
     "Quelques informations ..."
   ]
-  var subtitle = subtitlesList[Math.ceil(Math.random()*subtitlesList.length)-1];
+  var subtitleOld = $("h2.project-tagline").text();
+  var subtitle = subtitleOld;
+  while (subtitle == subtitleOld) {
+    subtitle = subtitlesList[Math.ceil(Math.random()*subtitlesList.length)-1];
+  }
   $("h2.project-tagline").text(subtitle);
 }
 
@@ -18,4 +25,6 @@ $(function(){
 
   $("h2.project-tagline").click(changeSubtitle);
   changeSubtitle();
+
+  $("nav ul.links").menuOnScroll();
 })

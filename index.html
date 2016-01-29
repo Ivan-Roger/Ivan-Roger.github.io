@@ -8,18 +8,29 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/nav.css" media="screen">
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Ivan-Roger.GitHub.io</h1>
+    <header class="page-header">
+      <h1 class="project-name">Ivan-Roger on GitHub.io</h1>
       <h2 class="project-tagline">Etudiant en informatique</h2>
-    </section>
+    </header>
+
+    <nav class="navigation">
+      <ul class="links">
+        <li class="menu-item active"><a href="#welcome">Bienvenue</a></li>
+        <li class="menu-item"><a href="#projects">Mes projets</a></li>
+      </ul>
+      <div class="settings">
+        <a href="#">Paramètres</a>
+      </div>
+    </nav>
 
     <section class="main-content">
-      <h3><a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bienvenue</h3>
+      <h3><a id="welcome" class="anchor" href="#welcome" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bienvenue</h3>
       <p>Bienvenue sur mon site public de développement. Si vous avez une question, n'hésitez pas a me contacter via GitHub : <a href="https://github.com/Ivan-Roger">@Ivan-Roger</a> ...</p>
 
-      <h3><a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mes projets</h3>
+      <h3><a id="projects" class="anchor" href="#projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mes projets</h3>
       <p>Voici les différents projets sur lesquels j'ai travaillé, ou je travaille actuellement :
          <ul>
             <li><b><a href="https://github.com/Ivan-Roger/Daelium">Daelium</a></b>: Daelium est un site internet crée pour assister lesacteurs du monde de la musique dans leurs pratiques profesionnelles.</li>
@@ -38,6 +49,7 @@
       </footer>
     </section>
     <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="js/jquery.menuOnScroll.js"></script>
     <script src="js/dynamic-content.js"></script>
   </body>
 </html>
