@@ -5,7 +5,7 @@ function changeSubtitle() {
     "Les infos sont ici.",
     "Quelques informations ..."
   ]
-  var subtitle = subtitlesList[randomInt()%subtitlesList.length];
+  var subtitle = subtitlesList[Math.randomInt()%subtitlesList.length];
   $("h2.project-tagline").text(subtitle);
 }
 
