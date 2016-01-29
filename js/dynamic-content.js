@@ -1,3 +1,6 @@
+var VERSION = '1.0.0';
+var LAST_UPDATE = '29/01/2016';
+
 function changeSubtitle() {
   var subtitlesList = [
     "Et bien plus ...",
@@ -10,6 +13,9 @@ function changeSubtitle() {
 }
 
 $(function(){
+  $(".version-info-footer .version").text(VERSION);
+  $(".version-info-footer .last-update").text(LAST_UPDATE);
+
   $("h2.project-tagline").click(changeSubtitle);
   changeSubtitle();
 })
